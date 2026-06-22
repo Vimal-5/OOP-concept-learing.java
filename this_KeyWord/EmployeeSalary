@@ -1,0 +1,25 @@
+class Employee{
+    int emp_id;
+    String emp_name;
+    double salary;
+    
+    Employee(int emp_id, String emp_name, double salary){
+        this.emp_id = emp_id;
+        this.emp_name = emp_name;
+        this.salary = salary;
+    }
+    
+    void display(){
+        System.out.println("Employee id:"+emp_id);
+        System.out.println("Employee name:"+emp_name);
+        System.out.println("Employee salary:"+salary);
+    }
+}
+
+public class Main
+{
+	public static void main(String[] args) {
+		Employee e = new Employee(101,"vimal",25000);
+		e.display();
+	}
+}
