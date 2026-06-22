@@ -1,0 +1,24 @@
+class Employee{
+    int emp_id;
+    String emp_name;
+    double salary;
+    
+    Employee(int id, String name, double sal){
+        emp_id=id;
+        emp_name=name;
+        salary=sal;
+    }
+    
+    void display(){
+        System.out.println(emp_id);
+        System.out.println(emp_name);
+        System.out.println(salary);
+    }
+}
+
+public class Main{
+	public static void main(String[] args) {
+		Employee e= new Employee(101,"vimal",10000);
+		e.display();
+	}
+}
